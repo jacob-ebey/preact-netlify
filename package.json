@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "cuttlebelle",
-    "dev": "cuttlebelle watch -s",
+    "dev": "gulp copyDevContent && cuttlebelle watch -s",
     "prod": "serve -d ./site"
   },
   "keywords": [],
@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "cuttlebelle": "^1.0.0-alpha.68",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
     "serve": "^11.3.0"
   }
 }
